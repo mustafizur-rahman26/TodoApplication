@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.todo" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.application.todo.view.activity.TodoListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.todo.view.activity.TodoDetailActivity"
+            android:label="@string/title_activity_todo"
+            android:parentActivityName="com.application.todo.view.activity.TodoListActivity" >
+        </activity>
+
+        <provider
+            android:name="com.application.todo.model.ContentProvider.TodoProvider"
+            android:authorities="com.application.todo.model.provider.TodoProvider"
+            android:exported="false" />
+    </application>
+
+</manifest>
