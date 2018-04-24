@@ -3,11 +3,11 @@
 ## Provide a basic Model-View-Presenter (MVP) architecture & Repository pattern
 
 ## With the app, you can:
-- Add new TODOs
-- Delete TODOs
-- Update TODOs
+- Add new ToDo
+- Delete ToDo
+- Update ToDo
 - Discard changes
-- Complete/Incomplete TODOs
+- Complete/Incomplete ToDo
 
 ## Dependencies
 - appcompat-v7:26.1.0
